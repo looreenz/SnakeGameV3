@@ -29,7 +29,7 @@ void setup() {
 }
 
 void draw() {
-  if (gameStarted == false) {
+  if (gameStarted == false) { //<>//
     menu.display();
   } else {
     menu.hide();
