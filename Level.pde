@@ -4,7 +4,6 @@
 public class Level {
   private int levelIndex;
   private int wallCount;
-  private PImage wallImg;
   private ArrayList<Wall> wallArray;
 
   /**
@@ -15,7 +14,6 @@ public class Level {
   public Level(int index) {
     this.levelIndex = index;
     this.wallCount = 10;
-    this.wallImg = loadImage("data/sprites/wall_block.png");
     this.wallArray = new ArrayList<Wall>();
   }
 

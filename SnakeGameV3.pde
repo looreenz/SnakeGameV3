@@ -17,8 +17,10 @@ ArrayList<Snake> snakeBody;
 PImage bodyImg;
 Food food;
 PImage foodImg;
+PImage wallImg;
 boolean gameOver = false;
 boolean gameStarted = false;
+boolean infoDisplay = false;
 
 /**
  * Initial setup for the game.
@@ -51,6 +53,9 @@ void setup() {
   // Load image and initialize food.
   foodImg = loadImage("data/sprites/apple_red.png");
   food = new Food(10, 10, foodImg);
+
+  // Load wall image.
+  wallImg = loadImage("data/sprites/wall_block.png");
 }
 
 /**
@@ -58,11 +63,11 @@ void setup() {
  * Handles the display and game logic.
  */
 void draw() {
-  if (!gameStarted) {
+  if (!gameStarted && !infoDisplay) {
     menu.display(); // Display the menu if the game has not started.
   } else {
     menu.hide(); // Hide the menu if the game has started.
-    if (!gameOver) {
+    if (!gameOver && !infoDisplay) {
       // Display game background, level, scores, food, and snake.
       game.displayBg();
       level.display();
@@ -83,7 +88,7 @@ void draw() {
         food.place(); // Place the food at a new random location.
         scores.update(1); // Update the score.
       }
-    } else {
+    } else if (!infoDisplay) {
       game.gameOver(); // Display game over screen if the game is over.
     }
   }
