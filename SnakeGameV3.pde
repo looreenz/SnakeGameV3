@@ -1,4 +1,17 @@
-import ddf.minim.*; //<>//
+/** //<>//
+ * Snake Game V3.
+ * A Java snake game developed in Processing IDE and its API with info page, sound control and difficulty selection.
+ * Easy: the classic snake game, don't touch the edges or yourself or you'll die;
+ * Medium: a set of wall is placed with random positions at the beginning if the game;
+ * Hard: every apple eaten, one wall more on the table, with random position so watch out!
+ * The only thing you need to do is press Play and have fun!
+ *
+ * @author: Lorenzo Cremonese
+ * @version: 3.0
+ * @since: 16/04/2024
+ */
+
+import ddf.minim.*;
 
 /**
  * Main class for the Snake Game.
