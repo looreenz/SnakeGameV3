@@ -13,6 +13,6 @@ The only thing you need to do is press **Play** and **have fun**!
 
 ## Demo
 
-<video src="mockups/SnakeGameV3.mp4" controls></video>
+<video src="mockups/SnakeGameV3.mp4" width="1080" height="1080" controls></video>
 
 ## Hope you Enjoy!
