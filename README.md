@@ -1,6 +1,5 @@
 # Snake Game V3
 
-Snake Game V3.
 A Java snake game developed in Processing IDE and its API with info page, sound control and difficulty selection:
 
 **Easy:** the classic snake game, don't touch the edges or yourself or you'll die;
