@@ -16,6 +16,6 @@ The only thing you need to do is press **Play** and **have fun**!
 
 ## Demo
 
-![](mockups/SnakeGameV3.mp4)
+https://github.com/looreenz/SnakeGameV3/assets/155968711/30607f4d-f7e3-46fc-8361-2ce47ef15888
 
 ## Hope you Enjoy!
